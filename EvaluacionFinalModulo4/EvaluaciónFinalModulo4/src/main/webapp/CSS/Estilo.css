@@ -1,0 +1,81 @@
+/* CSS GENERALES */
+body {
+	/* Ubicación de la imagen */
+	background-image:
+		url(https://img2.freepng.es/20180326/suw/kisspng-computer-software-desktop-wallpaper-clip-art-sky-5ab93e2c47e7b5.1403352415220895162945.jpg);
+	/* Para dejar la imagen de fondo centrada, vertical y
+     horizontalmente */
+	background-position: center center;
+	/* Para que la imagen de fondo no se repita */
+	background-repeat: no-repeat;
+	/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+	background-attachment: fixed;
+	/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+	background-size: cover;
+}
+/* formato formulario */
+
+.formulario{
+	text-align:center;
+    font-size: 25px;
+    width: 500px;
+    margin: 25px auto;
+    padding: 20px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+
+/* formato imagen */
+
+.imagen{
+	text-align:center; 
+	margin: 25px auto;
+}
+
+
+img {
+    display: inline;
+    margin: 1%;
+    max-width: 50%;
+    width: 30%;
+}
+
+/* Clases de ubicación */
+.centrar {
+	text-align-last: center;
+	margin: 40px;
+}
+
+.bloque {
+	display: inline-block;
+	padding: 1%;
+	margin: 2%;
+}
+
+
+/* Titulos y parrafo */
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+
+
+
+
+
+/* MEDIAS QUARYS*/
