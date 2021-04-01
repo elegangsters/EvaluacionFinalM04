@@ -1,10 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Contacto</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	crossorigin="anonymous"></script>
+
+<script>
+<%@include file="js/script.js"%>
+</script>
+
+<style type="text/css">
+<%@ include file ="/CSS/Estilo.css"%>
+</style>
 
 <style type="text/css">
 <%@ include file ="/CSS/Estilo.css"%>
@@ -25,7 +37,7 @@
 			src="https://evaluaciones.alineosoft.com/gentelella-master/production/images/logo-humanidea.png">
 	</div>
 
-	<!--Menú -->
+	<!--MenÃº -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
 			<button class="navbar-toggler" type="button"
@@ -44,7 +56,7 @@
 							Crear </a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<li><a class="dropdown-item" href="CrearCapacitacion">Crear
-									Capacitación</a></li>
+									CapacitaciÃ³n</a></li>
 							<li><a class="dropdown-item" href="CrearUsuario">Crear
 									Usuario</a></li>
 						</ul>
@@ -54,7 +66,7 @@
 						data-bs-toggle="dropdown" aria-expanded="false"> Listar </a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<li><a class="dropdown-item" href="ListarCapacitacion">Listar
-									Capacitación</a></li>
+									CapacitaciÃ³n</a></li>
 							<li><a class="dropdown-item" href="ListarUsuarios">Listar
 									Usuario</a></li>
 						</ul></li>
@@ -65,44 +77,39 @@
 		</div>
 	</nav>
 
-	<!--Título -->
-	<h2 class="centrar">Contáctanos</h2>
+	<!--TÃ­tulo -->
+	<h2 class="centrar">ContÃ¡ctanos</h2>
 	
 	<h4 class ="centrar">Ingresa tus datos y nos pondremos en contacto contigo:</h4>
 	
 	<!--formulario -->
 
-	<div class="formulario">
-		<form action="ConsolaContacto" method="post">
-
-			<div class="input-group input-group-lg mb-3">
-				<span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+	<div class="container">
+		<form id= "formContacto" action="ConsolaContacto" method="post" class="row g-3 needs-validation">
+			<div class="col-4">
+				<label for="nombre" class="form-label" id="inputGroup-sizing-default">Nombre</label>
 				<input name="nombre" type="text" class="form-control"
 					aria-label="Sizing example input"
 					aria-describedby="inputGroup-sizing-default">
 			</div>
-
-			<div class="input-group input-group-lg mb-3">
-				<span class="input-group-text" id="inputGroup-sizing-default">Correo</span>
+			<div class="col-4">
+				<label for="correo" class="form-label" id="inputGroup-sizing-default">Correo</label>
 				<input name="correo" type="text" class="form-control"
 					aria-label="Sizing example input"
 					aria-describedby="inputGroup-sizing-lg">
 			</div>
-
-			<div class="input-group input-group-lg mb-3">
-				<span class="input-group-text" id="inputGroup-sizing-default">Telefono</span>
+			<div class="col-4">
+				<label class="form-label" id="inputGroup-sizing-default">Telï¿½fono</label>
 				 <input name="telefono" type="text" class="form-control"
 					aria-label="Sizing example input"
 					aria-describedby="inputGroup-sizing-lg">
 			</div>
-
-			<div class="input-group input-group-lg mb-3">
-				<span class="input-group-text" id="inputGroup-sizing-default">Mensaje</span>
-				 <input name="mensaje" type="text"
+			<div class="col-12">
+				<label class="form-label" id="inputGroup-sizing-default">Mensaje</label>
+				 <textarea name="mensaje" type="text"
 					class="form-control" aria-label="Sizing example input"
-					aria-describedby="inputGroup-sizing-lg">
+					aria-describedby="inputGroup-sizing-lg"></textarea>
 			</div>
-
 			<div class="centrar">
 				<button type="submit" class="btn btn-dark">Enviar</button>
 			</div>
@@ -118,6 +125,7 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
 		integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
 		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
 		
 </body>
 </html>

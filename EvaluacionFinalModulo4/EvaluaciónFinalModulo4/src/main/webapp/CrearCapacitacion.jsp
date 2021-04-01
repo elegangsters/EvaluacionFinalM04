@@ -1,10 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>CrearCapacitacion</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	crossorigin="anonymous"></script>
+	
+<script>
+<%@include file="js/script.js"%>
+</script>
 
 <style type="text/css">
 <%@ include file="/CSS/Estilo.css"%>
@@ -25,7 +33,7 @@
 			src="https://evaluaciones.alineosoft.com/gentelella-master/production/images/logo-humanidea.png">
 	</div>
 
-	<!--Menú -->
+	<!--MenÃº -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
 			<button class="navbar-toggler" type="button"
@@ -46,7 +54,7 @@
 						data-bs-toggle="dropdown" aria-expanded="false"> Crear </a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<li><a class="dropdown-item" href="CrearCapacitacion">Crear
-									Capacitación</a></li>
+									CapacitaciÃ³n</a></li>
 							<li><a class="dropdown-item" href="CrearUsuario">Crear
 									Usuario</a></li>
 						</ul>
@@ -56,7 +64,7 @@
 						data-bs-toggle="dropdown" aria-expanded="false"> Listar </a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<li><a class="dropdown-item" href="ListarCapacitacion">Listar
-									Capacitación</a></li>
+									CapacitaciÃ³n</a></li>
 							<li><a class="dropdown-item" href="ListarUsuarios">Listar
 									Usuario</a></li>
 						</ul></li>
@@ -67,37 +75,37 @@
 		</div>
 	</nav>
 
-	<!--Título -->
-	<h2 class="centrar">Creando una Nueva Capacitación</h2>
+	<!--TÃ­tulo -->
+	<h2 class="centrar">Creando una Nueva CapacitaciÃ³n</h2>
 
 	<!--formulario -->
 
-	<div class="formulario">
-		<form action="SubirCapacitacion" method="post">
+	<div class="container">
+		<form id="formCapacitacion" action="SubirCapacitacion" method="post" class="row g-3 needs-validation">
 
-			<div class="input-group input-group-lg mb-3">
-				<span class="input-group-text" id="inputGroup-sizing-default">Fecha</span>
+			<div class="col-12">
+				<label class="form-label" id="inputGroup-sizing-default">Fecha</label>
 				<input name="capFecha" type="text" class="form-control"
 					aria-label="Sizing example input"
 					aria-describedby="inputGroup-sizing-default">
 			</div>
 
-			<div class="input-group input-group-lg mb-3">
-				<span class="input-group-text" id="inputGroup-sizing-default">Hora</span>
+			<div class="col-12">
+				<label class="form-label" id="inputGroup-sizing-default">Hora</label>
 				<input name="capHora" type="text" class="form-control"
 					aria-label="Sizing example input"
 					aria-describedby="inputGroup-sizing-lg">
 			</div>
 
-			<div class="input-group input-group-lg mb-3">
-				<span class="input-group-text" id="inputGroup-sizing-default">Lugar</span>
+			<div class="col-12">
+				<label class="form-label" id="inputGroup-sizing-default">Lugar</label>
 				 <input name="capLugar" type="text" class="form-control"
 					aria-label="Sizing example input"
 					aria-describedby="inputGroup-sizing-lg">
 			</div>
 
-			<div class="input-group input-group-lg mb-3">
-				<span class="input-group-text" id="inputGroup-sizing-default">Duración</span>
+			<div class="col-12">
+				<label class="form-label" id="inputGroup-sizing-default">DuraciÃ³n(minutos)</label>
 				 <input name="capDuracion" type="text"
 					class="form-control" aria-label="Sizing example input"
 					aria-describedby="inputGroup-sizing-lg">
@@ -118,5 +126,6 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
 		integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
 		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
 </body>
 </html>

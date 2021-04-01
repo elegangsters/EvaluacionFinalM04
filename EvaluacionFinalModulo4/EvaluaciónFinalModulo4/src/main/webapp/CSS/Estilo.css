@@ -53,7 +53,19 @@ img {
 	padding: 1%;
 	margin: 2%;
 }
+/*Clase error para validaciones*/
 
+input.error {
+    border-color: darkred;
+}
+
+textarea.error {
+    border-color: darkred;
+}
+
+label.error {
+    color: darkred;
+}
 
 /* Titulos y parrafo */
 
